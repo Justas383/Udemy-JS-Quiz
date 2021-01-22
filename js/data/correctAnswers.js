@@ -1,6 +1,6 @@
 
 const correct = ['A', 'B', 'C', 'D'];
-const form = document.querySelector('#test');
+const form = document.querySelector('.test');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
