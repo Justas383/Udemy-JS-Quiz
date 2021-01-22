@@ -1,6 +1,8 @@
 
 const correct = ['A', 'B', 'C', 'D'];
-const form = document.querySelector('.test');
+const form = document.querySelector('.form');
+const results = document.querySelector('.results');
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -15,6 +17,23 @@ form.addEventListener('submit', e => {
         }
     });
 
-    console.log(score);
+    //rodom razultatus puslapyje
+
+    window.scrollTo(0,0)
+    
+    results.classList.remove('resultsD')
+
+    let output = 0;
+   const timer = setInterval(() => {
+       results.querySelector('span').textContent = `${output}%`;
+       if(output === score){
+           clearInterval(timer);
+       } else {
+           output++;
+       }
+   }, 50);
 
 });
+
+
+    

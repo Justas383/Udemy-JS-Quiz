@@ -6,22 +6,28 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>JS quiz</title>
 </head>
-<body>
+<body></body>
+
     <!--- Virsutine sekcija-->
     <div class="header">
             <h2 class="main-heading">Testo pavadinimas LOL?</h2>
     </div>
+
+    <div class="results resultsD" id="results">
+       <p>Tavo rezultatas: <span class="results%">0%</span> </p>
+    </div>
   <!--testo sekcija-->
     <div class="test" id="test">
             <h2>Let's start with the questions...</h2>
-        <form class="testo-forma" id="testo-forma">
+        <form class="form" id="form">
+            <div class="testo-forma" id="testo-forma">
+            </div>
 
-        </form>
         <div>
-
         <input type="submit" class="btn" value="submit"></input>
-
-        </div>
+        </div> 
+        </form>
+        
     </div>
 
     <script src="./js/main.js" type="module"></script>

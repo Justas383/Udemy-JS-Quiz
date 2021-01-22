@@ -12,24 +12,27 @@ body * {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background-color: wheat;
+    background-color: #56598f;;
 
 }
 .main-heading {
     font-size: 50px;
     font-weight: 100;
     padding: 50px 30px;
+    color: #8FF2B8;
 }
 .test > h2{
    margin: 30px;
    font-size: 30px;
    font-weight: 100;
+   color: #56598f;
    
 }
 .test {
-    background-color: lightblue;
+    padding: 40px;
+    background-color: #8FF2B8;
 }
-.testo-forma{
+.form{
     
     width: 100%;
     padding: 10px;
@@ -37,7 +40,7 @@ body * {
 }
 .form-check{
     font-size: 20px;
-    color: rgb(236, 236, 236);
+    color: #56598f;
 }
 .quiz{
     margin: 10px;
@@ -46,7 +49,7 @@ body * {
 .quiz > p {
     font-size: 30px;
     font-weight: 100;
-    color: rgb(236, 236, 236);
+    color: #56598f;
 }
 
 .btn{
@@ -57,3 +60,19 @@ body * {
     border-radius: 10px;
     border:none;
 }
+
+.results{
+    align-items: center;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    font-weight: 100;
+    background-image: linear-gradient(to bottom, #56598f ,#8FF2B8);
+    color: #e25959;
+}
+
+.resultsD{
+    display: none;
+}
+
